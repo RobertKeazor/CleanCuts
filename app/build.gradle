@@ -1,8 +1,7 @@
 apply plugin: 'com.android.application'
-
 apply plugin: 'kotlin-android'
-
 apply plugin: 'kotlin-android-extensions'
+apply plugin: "androidx.navigation.safeargs"
 
 android {
     compileSdkVersion 28
@@ -28,6 +27,10 @@ dependencies {
     implementation Deps.appCompat
     implementation Deps.constraintLayout
     implementation Deps.lifecycle
+    implementation Deps.lifecycle_streams
+    kapt Deps.lifecycle_anonatate
+    implementation Deps.nav_fragment
+    implementation Deps.nav_ui
     //Arrow
     implementation Deps.arrowCore
     implementation Deps.arrowTypeClass
@@ -39,4 +42,6 @@ dependencies {
     testImplementation Deps.junit
     androidTestImplementation Deps.testRunner
     androidTestImplementation Deps.espresso
+    testImplementation Deps.nav_testing
+    testImplementation Deps.lifecycle_testing
 }
