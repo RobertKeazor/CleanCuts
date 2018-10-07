@@ -8,9 +8,10 @@ object Version {
     val espresso = "3.1.0-alpha4"
     val arrow = "0.7.3"
     val nav = "1.0.0-alpha06"
-
+    val workmanager = "1.0.0-alpha09"
+    val dagger = "2.12"
+    val corutines = "0.26.1-eap13"
 }
-
 object Deps {
     val appCompat = "androidx.appcompat:appcompat:${Version.appCompat}"
     val constraintLayout = "androidx.constraintlayout:constraintlayout:${Version.constraintLayout}"
@@ -31,4 +32,10 @@ object Deps {
     val nav_fragment = "android.arch.navigation:navigation-fragment:${Version.nav}"
     val nav_ui = "android.arch.navigation:navigation-ui:${Version.nav}"
     val nav_testing = "android.arch.navigation:navigation-testing:${Version.nav}"
+    val workmanager = "android.arch.work:work-runtime:${Version.workmanager}"
+    val workmanagerTesting = "android.arch.work:work-testing:${Version.workmanager}"
+    val dagger = "com.google.dagger:dagger-android-support:${Version.dagger}"
+    val daggerAnontate = "com.google.dagger:dagger-android-processor:${Version.dagger}"
+    val coroutinesCore = "org.jetbrains.kotlinx:kotlinx-coroutines-core:${Version.corutines}"
+    val coroutinesAndroid = "org.jetbrains.kotlinx:kotlinx-coroutines-android:0.26.1-eap13"
 }

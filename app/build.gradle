@@ -1,6 +1,7 @@
 apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
 apply plugin: "androidx.navigation.safeargs"
 
 android {
@@ -19,6 +20,9 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    dataBinding {
+        enabled = true
+    }
 }
 
 dependencies {
@@ -31,6 +35,11 @@ dependencies {
     kapt Deps.lifecycle_anonatate
     implementation Deps.nav_fragment
     implementation Deps.nav_ui
+    implementation Deps.workmanager
+    implementation Deps.dagger
+    kapt Deps.daggerAnontate
+    implementation Deps.coroutinesCore
+    implementation Deps.coroutinesAndroid
     //Arrow
     implementation Deps.arrowCore
     implementation Deps.arrowTypeClass
@@ -42,6 +51,7 @@ dependencies {
     testImplementation Deps.junit
     androidTestImplementation Deps.testRunner
     androidTestImplementation Deps.espresso
+    androidTestImplementation Deps.workmanagerTesting
     testImplementation Deps.nav_testing
     testImplementation Deps.lifecycle_testing
 }
