@@ -1,4 +1,4 @@
-package base
+package com.cuts.cleancuts.mvvm.base
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity

@@ -1,7 +1,7 @@
-package com.cuts.cleancuts.ui.main
+package com.cuts.cleancuts.mvvm.viewmodel
 
 import androidx.databinding.ObservableField
-import base.BaseViewModel
+import com.cuts.cleancuts.mvvm.base.BaseViewModel
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 

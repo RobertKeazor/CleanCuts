@@ -5,14 +5,14 @@
     <data>
         <variable
             name="viewModel"
-            type="com.cuts.cleancuts.ui.main.MainViewModel"/>
+            type="com.cuts.cleancuts.mvvm.viewmodel.MainViewModel"/>
     </data>
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/main"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@android:color/holo_blue_bright"
-        tools:context=".ui.main.MainFragment">
+        tools:context=".mvvm.view.fragments.MainFragment">
         <TextView
             android:id="@+id/message"
             android:layout_width="wrap_content"

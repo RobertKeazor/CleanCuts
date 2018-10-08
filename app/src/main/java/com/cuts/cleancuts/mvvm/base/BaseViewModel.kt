@@ -1,4 +1,4 @@
-package base
+package com.cuts.cleancuts.mvvm.base
 
 import androidx.lifecycle.ViewModel
 import kotlinx.coroutines.CoroutineScope

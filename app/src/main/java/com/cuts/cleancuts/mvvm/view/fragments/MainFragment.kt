@@ -1,4 +1,4 @@
-package com.cuts.cleancuts.ui.main
+package com.cuts.cleancuts.mvvm.view.fragments
 
 import androidx.lifecycle.ViewModelProviders
 import android.os.Bundle
@@ -6,6 +6,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import com.cuts.cleancuts.databinding.MainFragmentBinding
+import com.cuts.cleancuts.mvvm.viewmodel.MainViewModel
 
 class MainFragment : Fragment() {
     lateinit var binding: MainFragmentBinding

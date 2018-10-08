@@ -5,6 +5,6 @@
     app:startDestination="@+id/mainFragment">
     <fragment
         android:id="@+id/mainFragment"
-        android:name="com.cuts.cleancuts.ui.main.MainFragment"
+        android:name="com.cuts.cleancuts.mvvm.view.fragments.MainFragment"
         android:label="MainFragment" />
 </navigation>
